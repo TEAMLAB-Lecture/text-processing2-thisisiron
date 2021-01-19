@@ -83,3 +83,8 @@ class TestTextProcessing(unittest.TestCase):
         test_str = "....."
         pred = tp.to_camel_case(test_str)
         self.assertEqual(pred, ".....")
+
+
+if __name__ == '__main__':
+    TestTextProcessing().test_digits_to_words()
+    TestTextProcessing().test_to_camel_case()
